@@ -1,0 +1,27 @@
+syms x y
+syms m
+*m=59*
+z=x^59*cos(59*y);
+diff(diff(z,x),x)
+ 
+ans =
+ 
+3422*x^57*cos(59*y)
+ 
+>> diff(diff(z,y),y)
+ 
+ans =
+ 
+-3481*x^59*cos(59*y)
+ 
+>> diff(diff(z,x),y)
+ 
+ans =
+ 
+-3481*x^58*sin(59*y)
+ 
+>> diff(diff(z,y),x)
+ 
+ans =
+ 
+-3481*x^58*sin(59*y)
