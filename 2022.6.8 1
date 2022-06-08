@@ -1,0 +1,13 @@
+syms x y
+syms m
+f=(m*sin(x*y^2))/(x*y)
+ 
+f =
+ 
+(m*sin(x*y^2))/(x*y)
+ 
+limit(limit(f,x,0),y,m)
+ 
+ans =
+ 
+m^2
